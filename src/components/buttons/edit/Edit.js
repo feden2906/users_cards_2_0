@@ -3,9 +3,11 @@ import './Edit.css'
 
 export class Edit extends Component {
   render() {
+    const {editUser} = this.props
     return (
-          <button className='btn-edit'>Edit</button>
+        <button onClick={() => editUser()} className='btn-edit'>Edit</button>
     );
   }
+
 }
 
