@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './Users.css'
 import TakeDataFromAPI from "../services/TakeDataFromAPI";
-import {Route, withRouter} from "react-router-dom";
+import {Route, withRouter,Switch} from "react-router-dom";
 import Loading from "../services/loading/Loading";
 import User from "../user/User";
 import ChosenUser from "../chosen-user/ChosenUser";
 import ModalEdit from "../modal-edit/ModalEdit";
 
 class Users extends Component {
-  state = {users: null, chosenUser: null, modal: ''}
+  state = {users: null, chosenUser: null, modal: '',flagged:true}
 
   componentDidMount() {
     const {match: {url}} = this.props
@@ -35,7 +35,8 @@ class Users extends Component {
       })
       this.setState({users})
     }
-    this.setState({modal: ''})
+    this.setState({modal: '',
+      flagged: !this.state.flagged,})
   }
   handlerUser =(id)=>{
     const {users} = this.state;
@@ -48,14 +49,14 @@ class Users extends Component {
     const {users: old} = this.state
     const users = old.filter(user => user.id !== id)
     this.setState({users})
-    const {history} = this.props
-    history.push('/Users')
+    // const {history} = this.props
+    // history.push('/Users')
   }
 
   render() {
 
     const {match: {url}} = this.props
-    const {users, chosenUser, modal} = this.state
+    const {users, chosenUser, modal,flagged} = this.state
     if (users) {
       return (
           <div className='users-wrapper'>
@@ -66,10 +67,12 @@ class Users extends Component {
               </div>
               <div className='w50'>
                 <Route path={url + '/:id'} render={(props) => {
+                  console.log(props);
                   const {match: {params: {id},url}} = props
 
                   return <ChosenUser key={id}
                                      id={id}
+                                     flagged={flagged}
                                      deleteUser={this.deleteUser}
                                      editUser={this.editUser}
                                      handlerUser={this.handlerUser}

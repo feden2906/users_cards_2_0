@@ -10,9 +10,9 @@ import {withRouter} from 'react-router-dom'
 class ChosenUser extends Component {
     constructor(props) {
         super(props);
-        const {handlerUser, id} = this.props;
+        const {handlerUser, id,flagged} = this.props;
         const user = handlerUser(id);
-        this.state = {user}
+        this.state = {user,flagged}
     }
   // state = {user: null, modal: ''};
 
@@ -23,9 +23,10 @@ class ChosenUser extends Component {
   //       .then(user => this.setState({user}))
   // }
 
+
   render() {
     const {deleteUser, editUser} = this.props
-      const {user} = this.state
+      const {user,flagged} = this.state
       console.log('ChosenUser',user);
 
     if (user) {
@@ -45,6 +46,7 @@ class ChosenUser extends Component {
               <Edit editUser={editUser}/>
               <Delete deleteUser={deleteUser} id={id}/>
             </div>
+              {flagged}
           </div>
       )
     } else {

@@ -9,8 +9,8 @@ class Body extends Component {
     return (
         <div>
           <Switch>
-            <Route path={'/Home'} component={Home}/>)}
-            <Route path={'/Users'} component={Users}/>)}
+            <Route path={'/home'} component={Home}/>)}
+            <Route path={'/users'} component={Users}/>)}
           </Switch>
         </div>
     );
