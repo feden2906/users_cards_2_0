@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="90%">
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/create/Create.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/create/Create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal-create/ModalCreate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal-create/ModalCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chosen-user/ChosenUser.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chosen-user/ChosenUser.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header-item/HeaderItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header-item/HeaderItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +58,7 @@
         <script value="start" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -77,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
       <workItem from="1608131683709" duration="52296000" />
+      <workItem from="1608230839732" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -143,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="---" />
