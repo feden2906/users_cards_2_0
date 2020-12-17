@@ -4,12 +4,13 @@ import logo from "../../logo.svg";
 import HeaderItem from "../header-item/HeaderItem";
 
 class Header extends Component {
-  headerArr = ['Home', 'Users']
+  headerArr = ['home', 'users']
   render() {
     return (
         <div className='header-wrapper'>
           <img src={logo} className="logo" alt="logo" />
-          {this.headerArr.map(value => <HeaderItem item={value} key={value}/>)}
+          {this.headerArr.map(value =>
+              <HeaderItem item={value} key={value}/>)}
         </div>
     );
   }
