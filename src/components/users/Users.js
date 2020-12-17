@@ -6,13 +6,14 @@ import Loading from "../services/loading/Loading";
 import User from "../user/User";
 import ChosenUser from "../chosen-user/ChosenUser";
 import ModalEdit from "../modal-edit/ModalEdit";
+import Create from "../buttons/create/Create";
+import ModalCreate from "../modal-create/ModalCreate";
 
 class Users extends Component {
-  state = {users: null, chosenUser: null, modal: ''}
+  state = {users: null, chosenUser: null, modal: '', modalCreate: ''}
 
   componentDidMount() {
     const {match: {url}} = this.props
-    console.log(url + `/:id`)
     TakeDataFromAPI(url)
         .then(users => this.setState({users}))
   }
@@ -24,7 +25,6 @@ class Users extends Component {
   editUser = () => {
     this.setState({modal: 'show'})
   }
-
   modalSaveClose = (btnName, stateFromModal) => {
     if (btnName === 'save') {
       const users = this.state.users.filter(user => user.id !== stateFromModal.id)
@@ -38,6 +38,19 @@ class Users extends Component {
     this.setState({modal: ''})
   }
 
+  createUser = () => {
+    this.setState({modalCreate: 'show'})
+  }
+
+  modalCreateClose =(btnName, newUser) => {
+    if(btnName === 'create') {
+      const {users} = this.state
+      users.push(newUser)
+      this.setState({users})
+    }
+      this.setState({modalCreate: ''})
+  }
+
   deleteUser = (id) => {
     const {users: old} = this.state
     const users = old.filter(user => user.id !== id)
@@ -49,7 +62,7 @@ class Users extends Component {
   render() {
 
     const {match: {url}} = this.props
-    const {users, chosenUser, modal} = this.state
+    const {users, chosenUser, modal, modalCreate} = this.state
     if (users) {
       return (
           <div className='users-wrapper'>
@@ -67,9 +80,11 @@ class Users extends Component {
                                      chosenUser={chosenUser}/>
                 }}
                 />
+                <Create createUser={this.createUser}/>
               </div>
             </div>
             {modal && <ModalEdit modalSaveClose={this.modalSaveClose} chosenUser={chosenUser}/>}
+            {modalCreate && <ModalCreate modalCreateClose={this.modalCreateClose}/>}
           </div>
       );
     } else {
