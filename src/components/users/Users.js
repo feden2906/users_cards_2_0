@@ -37,6 +37,12 @@ class Users extends Component {
     }
     this.setState({modal: ''})
   }
+  handlerUser =(id)=>{
+    const {users} = this.state;
+    const chosenUser = users.find(user => user.id === +id);
+    this.setState({chosenUser})
+    return chosenUser
+  }
 
   deleteUser = (id) => {
     const {users: old} = this.state
@@ -60,11 +66,14 @@ class Users extends Component {
               </div>
               <div className='w50'>
                 <Route path={url + '/:id'} render={(props) => {
-                  const {match: {params: {id}}} = props
+                  const {match: {params: {id},url}} = props
+
                   return <ChosenUser key={id}
+                                     id={id}
                                      deleteUser={this.deleteUser}
                                      editUser={this.editUser}
-                                     chosenUser={chosenUser}/>
+                                     handlerUser={this.handlerUser}
+                  />
                 }}
                 />
               </div>

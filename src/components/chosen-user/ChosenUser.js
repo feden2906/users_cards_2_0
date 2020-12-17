@@ -4,9 +4,16 @@ import Loading from "../services/loading/Loading";
 import TakeDataFromAPI from "../services/TakeDataFromAPI";
 import {Edit} from "../buttons/edit/Edit";
 import Delete from "../buttons/delete/Delete";
+import {withRouter} from 'react-router-dom'
 
 
 class ChosenUser extends Component {
+    constructor(props) {
+        super(props);
+        const {handlerUser, id} = this.props;
+        const user = handlerUser(id);
+        this.state = {user}
+    }
   // state = {user: null, modal: ''};
 
   // componentDidMount() {
@@ -17,11 +24,12 @@ class ChosenUser extends Component {
   // }
 
   render() {
-    const {deleteUser, editUser, chosenUser} = this.props
-    // const {user} = this.state
+    const {deleteUser, editUser} = this.props
+      const {user} = this.state
+      console.log('ChosenUser',user);
 
-    if (chosenUser) {
-      const {id, name, username, email, phone, website} = chosenUser
+    if (user) {
+      const {id, name, username, email, phone, website} = user
       return (
           <div className='chosen-user'>
             <p className='fs25'>{name}</p>
@@ -49,4 +57,4 @@ class ChosenUser extends Component {
   }
 }
 
-export default ChosenUser;
+export default withRouter(ChosenUser);
