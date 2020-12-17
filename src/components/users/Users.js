@@ -42,13 +42,14 @@ class Users extends Component {
     this.setState({modalCreate: 'show'})
   }
 
-  modalCreateClose =(btnName, newUser) => {
-    if(btnName === 'create') {
+  modalCreateClose = (btnName, newUser) => {
+    if (btnName === 'create') {
       const {users} = this.state
+      newUser.id = users[users.length - 1].id + 1
       users.push(newUser)
       this.setState({users})
     }
-      this.setState({modalCreate: ''})
+    this.setState({modalCreate: ''})
   }
 
   deleteUser = (id) => {
