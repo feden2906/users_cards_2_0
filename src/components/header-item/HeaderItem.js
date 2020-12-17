@@ -7,7 +7,7 @@ class HeaderItem extends Component {
     const {item} = this.props
     return (
         <div className='header-item'>
-          <Link to={item}><b>{item}</b></Link>
+          <Link to={'/' + item}><b>{item}</b></Link>
         </div>
     );
   }
