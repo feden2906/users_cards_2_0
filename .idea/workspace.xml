@@ -69,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
-      <workItem from="1608131683709" duration="56987000" />
+      <workItem from="1608131683709" duration="57623000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608278437005</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="95% Add function create new Users">
+      <created>1608287612678</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608287612682</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
