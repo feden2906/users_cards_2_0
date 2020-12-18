@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './Users.css'
 import TakeDataFromAPI from "../services/TakeDataFromAPI";
-import {Route, withRouter} from "react-router-dom";
 import Loading from "../services/loading/Loading";
 import User from "../user/User";
 import ChosenUser from "../chosen-user/ChosenUser";
@@ -41,7 +40,6 @@ class Users extends Component {
   createUser = () => {
     this.setState({modalCreate: 'show'})
   }
-
   modalCreateClose = (btnName, newUser) => {
     if (btnName === 'create') {
       const {users} = this.state
@@ -62,7 +60,6 @@ class Users extends Component {
 
   render() {
 
-    const {match: {url}} = this.props
     const {users, chosenUser, modal, modalCreate} = this.state
     if (users) {
       return (
@@ -73,14 +70,15 @@ class Users extends Component {
                 {users.map(value => <User user={value} key={value.id} chosenUser={this.chosenUser}/>)}
               </div>
               <div className='w50'>
-                <Route path={url + '/:id'} render={(props) => {
-                  const {match: {params: {id}}} = props
-                  return <ChosenUser key={id}
-                                     deleteUser={this.deleteUser}
-                                     editUser={this.editUser}
-                                     chosenUser={chosenUser}/>
-                }}
-                />
+                {chosenUser && <ChosenUser deleteUser={this.deleteUser} editUser={this.editUser} chosenUser={chosenUser}/>}
+                {/*<Route path={url + '/:id'} render={(props) => {*/}
+                {/*  const {match: {params: {id}}} = props*/}
+                {/*  return <ChosenUser key={id}*/}
+                {/*                     deleteUser={this.deleteUser}*/}
+                {/*                     editUser={this.editUser}*/}
+                {/*                     chosenUser={chosenUser}/>*/}
+                {/*}}*/}
+                {/*/>*/}
                 <Create createUser={this.createUser}/>
               </div>
             </div>
@@ -100,7 +98,7 @@ class Users extends Component {
   }
 }
 
-export default withRouter(Users);
+export default Users;
 
 
 
