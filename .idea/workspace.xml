@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="95% Add function create new Users">
-      <change afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dont-create/DontCreate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dont-create/DontCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search-panel/SearchPanel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search-panel/SearchPanel.js" afterDir="false" />
+    <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="add modal create Announcement">
+      <change afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/services/loading/Loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/services/loading/Loading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/services/loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/services/loading/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/announcements/Announcements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
-      <workItem from="1608131683709" duration="72622000" />
+      <workItem from="1608131683709" duration="80762000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -182,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608290805056</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add modal create Announcement">
+      <created>1608316359943</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608316359945</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +203,7 @@
     <MESSAGE value="93%" />
     <MESSAGE value="95%" />
     <MESSAGE value="95% Add function create new Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="95% Add function create new Users" />
+    <MESSAGE value="add modal create Announcement" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modal create Announcement" />
   </component>
 </project>
