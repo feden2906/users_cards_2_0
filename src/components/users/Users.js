@@ -70,8 +70,15 @@ class Users extends Component {
                 {users.map(value => <User user={value} key={value.id} chosenUser={this.chosenUser}/>)}
               </div>
               <div className='w50'>
-                {chosenUser &&
-                <ChosenUser deleteUser={this.deleteUser} editUser={this.editUser} chosenUser={chosenUser}/>}
+                {chosenUser && <ChosenUser deleteUser={this.deleteUser} editUser={this.editUser} chosenUser={chosenUser}/>}
+                {/*<Route path={url + '/:id'} render={(props) => {*/}
+                {/*  const {match: {params: {id}}} = props*/}
+                {/*  return <ChosenUser key={id}*/}
+                {/*                     deleteUser={this.deleteUser}*/}
+                {/*                     editUser={this.editUser}*/}
+                {/*                     chosenUser={chosenUser}/>*/}
+                {/*}}*/}
+                {/*/>*/}
                 <Create createUser={this.createUser}/>
               </div>
             </div>

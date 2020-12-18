@@ -1,0 +1,46 @@
+.wrapper-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 80%;
+    margin: auto;
+
+}
+.input-panel {
+    height: 70%;
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+}
+.input-panel:active {
+    border: #918957 solid 3px;
+}
+.btn-panel {
+    height: 70%;
+    width: 19%;
+    max-width: 170px;
+    min-width: 100px;
+    border-radius: 7px;
+    background-color: #a08524;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn-panel:hover {
+    background-color: #645013;
+    color: #e3e3e3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

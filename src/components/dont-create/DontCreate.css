@@ -1,0 +1,10 @@
+.dont-create-text{
+    font-size: 35px;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.4);
+    margin: 30px;
+}
+.dca-flex {
+    display: flex;
+    flex-direction: column;
+}
