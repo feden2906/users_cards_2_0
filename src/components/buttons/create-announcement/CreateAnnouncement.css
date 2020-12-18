@@ -1,0 +1,12 @@
+.btn-create-announcement {
+    background-color: #439b33;
+    border-radius: 5px;
+    font-size: 30px;
+    height: 50px;
+    margin: auto;
+    width: 200px;
+}
+.btn-create-announcement:hover {
+    background-color: #2d7925;
+    color: whitesmoke;
+}

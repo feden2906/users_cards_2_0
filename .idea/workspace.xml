@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="95% Add function create new Users">
+      <change afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dont-create/DontCreate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dont-create/DontCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search-panel/SearchPanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search-panel/SearchPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/services/loading/Loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/services/loading/Loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/services/loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/services/loading/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +61,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\STUDY\React OktenWeb\users_cards_2_0\src\components\buttons" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\STUDY\React OktenWeb\users_cards_2_0\src\components" />
+      <recent name="D:\STUDY\React OktenWeb\users_cards_2_0\src\components\services" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -69,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
-      <workItem from="1608131683709" duration="57623000" />
+      <workItem from="1608131683709" duration="72622000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -155,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608287612682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="95% Add function create new Users">
+      <created>1608290805054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608290805056</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
