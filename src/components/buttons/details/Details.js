@@ -3,8 +3,9 @@ import './Details.css'
 
 class Details extends Component {
   render() {
+    const {chosenUser, user}=this.props
     return (
-          <button className='btn-details'>Details</button>
+          <button onClick={() => chosenUser(user)} className='btn-details'>Details</button>
     );
   }
 }
