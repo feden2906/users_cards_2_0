@@ -1,7 +1,9 @@
 import './Announcement.css'
 import React, {useState} from "react";
 
-export default function Announcement({announcement: {id, title, description}, announcement, index, deleteAnnouncement, editAnnouncement}) {
+export default function Announcement(props) {
+  const {announcement, index, deleteAnnouncement, editAnnouncement} = props
+  const {id, title, description, createDate:{date, month, year, hours, minutes, seconds}} = announcement
   const [flag, setFlag] = useState(false)
 
 
@@ -17,6 +19,10 @@ export default function Announcement({announcement: {id, title, description}, an
             </div>
           </div>
           <p className='description'>{description}</p>
+          <div>
+            <p>Created :</p>
+            <p>{`${hours}:${minutes}  ${date}.${month}.${year}`}</p>
+          </div>
         </div>
     )
   } else {
