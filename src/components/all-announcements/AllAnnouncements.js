@@ -1,5 +1,5 @@
 import Announcement from "../announcement/Announcement";
-import React, {useState} from "react";
+import React from "react";
 import CreateAnnouncement from "../buttons/create-announcement/CreateAnnouncement";
 
 export default function AllAnnouncements ({announcements, setModalState, deleteAnnouncement}){
