@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './Announcements.css'
 import SearchPanel from "../search-panel/SearchPanel";
-import Announcement from "../announcement/Announcement";
 import DontCreate from "../dont-create/DontCreate";
 import ModalCreateAnnouncement from "../modal-create-announcement/ModalCreateAnnouncement";
 import AllAnnouncements from "../all-announcements/AllAnnouncements";
@@ -20,9 +19,13 @@ export default function Announcements() {
     } else {
       id = 1
     }
+    // TODO time
     arr.push({title, description, id})
     setAnnouncements(arr)
-    console.log(announcements)
+  }
+
+  const deleteAnnouncement = (id) => {
+    console.log(id)
   }
 
   return (
@@ -31,7 +34,11 @@ export default function Announcements() {
         <SearchPanel/>
         {
           announcements.length > 0
-              ? <AllAnnouncements announcements={announcements} setModalState={setModalState}/>
+              ? <AllAnnouncements
+                  announcements={announcements}
+                  setModalState={setModalState}
+                  deleteAnnouncement={deleteAnnouncement}
+                />
               : <DontCreate setModalState={setModalState}/>
         }
         {modal && <ModalCreateAnnouncement
