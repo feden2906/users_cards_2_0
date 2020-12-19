@@ -9,7 +9,6 @@ export default function Announcements() {
   const [announcements, setAnnouncements] = useState([]);
   const [modal, setModalState] = useState(null);
 
-
   const addAnnouncementToArr = (title, description) => {
     setModalState(null)
     const arr = JSON.parse(JSON.stringify(announcements))
@@ -25,7 +24,7 @@ export default function Announcements() {
   }
 
   const deleteAnnouncement = (id) => {
-    console.log(id)
+    setAnnouncements(announcements.filter(value => value.id !== id))
   }
 
   return (
@@ -38,7 +37,7 @@ export default function Announcements() {
                   announcements={announcements}
                   setModalState={setModalState}
                   deleteAnnouncement={deleteAnnouncement}
-                />
+              />
               : <DontCreate setModalState={setModalState}/>
         }
         {modal && <ModalCreateAnnouncement
