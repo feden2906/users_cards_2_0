@@ -1,19 +1,20 @@
 .announcement-wrapper {
+    width: 90%;
+    background-color: #e3e3e3;
+    margin: 2px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.announcement-title-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    background-color: #e3e3e3;
-    margin: 1px auto;
-    border-radius: 10px;
-    padding: 10px;
 }
 .announcement-wrapper:hover {
     background-color: #c6c6c6;
 }
 .title{
     font-size: 20px;
-
 }
 .btn {
     background-color: #5d89d0;
@@ -22,7 +23,6 @@
     height: 40px;
     width: 80px;
 }
-
 .red {
     background-color: #9b3333;
 }
@@ -46,5 +46,7 @@
     background-color: #796a25;
     color: whitesmoke;
 }
-
+.description {
+    margin: 25px 15px 20px;
+}
 

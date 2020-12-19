@@ -7,8 +7,8 @@ export default function Announcement({announcement: {id, title, description}, in
 
   if (flag) {
     return (
-        <div>
-          <div className='announcement-wrapper'>
+        <div className='announcement-wrapper'>
+          <div className='announcement-title-wrapper'>
             <p className='title'>{`${index + 1}. ${title}`}</p>
             <div>
               <input type="button" value='Edit' className='btn yellow'/>
@@ -22,10 +22,12 @@ export default function Announcement({announcement: {id, title, description}, in
   } else {
     return (
         <div className='announcement-wrapper'>
-          <p className='title'>{`${index + 1}. ${title}`}</p>
-          <div className='btn-announcement-wrapper'>
-            <input onClick={() => setFlag(true)} type="button" value='Details' className='btn blue'/>
-            <input onClick={() => deleteAnnouncement(id)} type="button" value='Delete' className='btn red'/>
+          <div className='announcement-title-wrapper'>
+            <p className='title'>{`${index + 1}. ${title}`}</p>
+            <div className='btn-announcement-wrapper'>
+              <input onClick={() => setFlag(true)} type="button" value='Details' className='btn blue'/>
+              <input onClick={() => deleteAnnouncement(id)} type="button" value='Delete' className='btn red'/>
+            </div>
           </div>
         </div>
     )
