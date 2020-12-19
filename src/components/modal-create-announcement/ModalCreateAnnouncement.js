@@ -12,7 +12,7 @@ export default function ModalCreateAnnouncement({closeModal, addAnnouncementToAr
             <span><b className='af-fs20'>Title :</b></span>
             {
               modalEdit
-                ? <input
+                  ? <input
                       onInput={(e) => setTitle(e.currentTarget.value)}
                       className='modal-input-announcement'
                       type="text"
@@ -30,14 +30,14 @@ export default function ModalCreateAnnouncement({closeModal, addAnnouncementToAr
             <span><b className='af-fs20'>Description :</b></span>
             {
               modalEdit
-                ? <textarea
-                      onInput={(e)=> setDescription(e.currentTarget.value)}
+                  ? <textarea
+                      onInput={(e) => setDescription(e.currentTarget.value)}
                       className='modal-input-announcement resize'
                       cols="40" rows="5"
                       defaultValue={modalEdit.announcement.description}/>
 
                   : <textarea
-                      onInput={(e)=> setDescription(e.currentTarget.value)}
+                      onInput={(e) => setDescription(e.currentTarget.value)}
                       className='modal-input-announcement resize'
                       cols="40" rows="5"/>
             }
