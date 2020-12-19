@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="о">
+    <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="add create date">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcement/Announcement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcement/Announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcements/Announcements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
       <workItem from="1608131683709" duration="88656000" />
-      <workItem from="1608370090472" duration="7270000" />
+      <workItem from="1608370090472" duration="13311000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -196,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608337502559</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="50%">
+      <created>1608380532853</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608380532853</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add create date">
+      <created>1608400228591</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608400228591</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +226,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="---" />
-    <MESSAGE value="50%" />
     <MESSAGE value="60%" />
     <MESSAGE value="85%" />
     <MESSAGE value="90%" />
@@ -226,6 +235,8 @@
     <MESSAGE value="add modal create Announcement" />
     <MESSAGE value="rfc + hooks" />
     <MESSAGE value="о" />
-    <option name="LAST_COMMIT_MESSAGE" value="о" />
+    <MESSAGE value="50%" />
+    <MESSAGE value="add create date" />
+    <option name="LAST_COMMIT_MESSAGE" value="add create date" />
   </component>
 </project>

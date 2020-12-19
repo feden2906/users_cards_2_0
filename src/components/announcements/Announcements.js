@@ -12,22 +12,24 @@ export default function Announcements() {
 
   const addAnnouncementToArr = (title, description) => {
     const arr = JSON.parse(JSON.stringify(announcements))
-    let id = null
+    const year = new Date().getFullYear()
+    const month = new Date().getMonth() + 1
+    const date = new Date().getDate()
+    const hours = new Date().getHours()
+    const minutes = new Date().getMinutes()
+    let id = null;
+
     if (modalEdit) {
       const chosenAnnouncement = arr.find(value => value.id)
       chosenAnnouncement.title = title
       chosenAnnouncement.description = description
+      const editDate = {date, month, year, hours, minutes}
+      arr.push({id, title, description, editDate})
     } else {
       (announcements.length > 0)
           ? id = announcements[announcements.length - 1].id + 1
           : id = 1
-      const year = new Date().getFullYear()
-      const month = new Date().getMonth() + 1
-      const date = new Date().getDate()
-      const hours = new Date().getHours()
-      const minutes = new Date().getMinutes()
-      const seconds = new Date().getSeconds()
-      const createDate = {date, month, year, hours, minutes, seconds}
+      const createDate = {date, month, year, hours, minutes}
       arr.push({id, title, description, createDate})
     }
 
