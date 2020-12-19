@@ -4,10 +4,13 @@
     <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="о">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcement/Announcement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcement/Announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcements/Announcements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
       <workItem from="1608131683709" duration="88656000" />
+      <workItem from="1608370090472" duration="7270000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -208,6 +212,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="---" />

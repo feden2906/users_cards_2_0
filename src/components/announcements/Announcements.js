@@ -8,6 +8,7 @@ import AllAnnouncements from "../all-announcements/AllAnnouncements";
 export default function Announcements() {
   const [announcements, setAnnouncements] = useState([]);
   const [modal, setModalState] = useState(null);
+  const [modalEdit, setModalEditState] = useState(false);
 
   const addAnnouncementToArr = (title, description) => {
     setModalState(null)
@@ -21,6 +22,20 @@ export default function Announcements() {
     // TODO time
     arr.push({title, description, id})
     setAnnouncements(arr)
+    setModalEditState(false)
+
+  }
+
+  const editAnnouncement = (announcement) => {
+    const arr = announcements.filter(value => value.id !== announcement.id)
+    console.log(arr)
+    setModalEditState({announcement})
+    setModalState('Edit')
+  }
+
+  const closeModal = () => {
+    setModalEditState(false)
+    setModalState(null)
   }
 
   const deleteAnnouncement = (id) => {
@@ -34,17 +49,19 @@ export default function Announcements() {
         {
           announcements.length > 0
               ? <AllAnnouncements
-                  announcements={announcements}
-                  setModalState={setModalState}
-                  deleteAnnouncement={deleteAnnouncement}
-              />
+                    editAnnouncement={editAnnouncement}
+                    announcements={announcements}
+                    setModalState={setModalState}
+                    deleteAnnouncement={deleteAnnouncement}/>
               : <DontCreate setModalState={setModalState}/>
         }
         {modal && <ModalCreateAnnouncement
-            setModalState={setModalState}
-            setAnnouncements={setAnnouncements}
-            addAnnouncementToArr={addAnnouncementToArr}
-        />
+                    modalType={modal}
+                    modalEdit={modalEdit}
+                    closeModal={closeModal}
+                    setAnnouncements={setAnnouncements}
+                    addAnnouncementToArr={addAnnouncementToArr}
+                  />
         }
       </div>
   );

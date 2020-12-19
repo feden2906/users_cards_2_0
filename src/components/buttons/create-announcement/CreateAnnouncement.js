@@ -3,6 +3,6 @@ import React from "react";
 
 export default function CreateAnnouncement({setModalState}) {
   return (
-      <button onClick={() => setModalState('show')} className='btn-create-announcement'>Create</button>
+      <button onClick={() => setModalState('Create')} className='btn-create-announcement'>Create</button>
   );
 }
