@@ -1,7 +1,7 @@
 import './Announcement.css'
 import React, {useState} from "react";
 
-export default function Announcement({announcement: {id, title, description}, index, deleteAnnouncement}) {
+export default function Announcement({announcement: {id, title, description}, announcement, index, deleteAnnouncement, editAnnouncement}) {
   const [flag, setFlag] = useState(false)
 
 
@@ -11,7 +11,7 @@ export default function Announcement({announcement: {id, title, description}, in
           <div className='announcement-title-wrapper'>
             <p className='title'>{`${index + 1}. ${title}`}</p>
             <div>
-              <input type="button" value='Edit' className='btn yellow'/>
+              <input onClick={() => editAnnouncement(announcement)} type="button" value='Edit' className='btn yellow'/>
               <input onClick={() => setFlag(false)} type="button" value='Hide' className='btn blue'/>
               <input onClick={() => deleteAnnouncement(id)} type="button" value='Delete' className='btn red'/>
             </div>
