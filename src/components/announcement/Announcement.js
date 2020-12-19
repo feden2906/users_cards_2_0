@@ -8,7 +8,6 @@ export default function Announcement(props) {
 
   const [flag, setFlag] = useState(false)
 
-
   if (flag) {
     return (
         <div className='announcement-wrapper'>
@@ -23,13 +22,13 @@ export default function Announcement(props) {
           <p className='description'>{description}</p>
 
           <div className='time'>
-            {editDate && <div>
-                            <p>Edited :</p>
+            {editDate && <div className='time-items'>
+                            <p><b>Edited :</b></p>
                             <p>{`${editDate.hours}:${editDate.minutes} ${editDate.date}.${editDate.month}.${editDate.year}`}</p>
                          </div>
             }
-            <div>
-              <p>Created :</p>
+            <div className='time-items'>
+              <p><b>Created :</b></p>
               <p>{`${hours}:${minutes} ${date}.${month}.${year}`}</p>
             </div>
 

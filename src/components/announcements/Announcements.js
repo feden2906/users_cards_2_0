@@ -20,11 +20,11 @@ export default function Announcements() {
     let id = null;
 
     if (modalEdit) {
-      const chosenAnnouncement = arr.find(value => value.id)
-      chosenAnnouncement.title = title
-      chosenAnnouncement.description = description
+      const chosen = arr.find(value => value.id)
       const editDate = {date, month, year, hours, minutes}
-      arr.push({id, title, description, editDate})
+      chosen.title = title
+      chosen.description = description
+      chosen.editDate = editDate
     } else {
       (announcements.length > 0)
           ? id = announcements[announcements.length - 1].id + 1
@@ -33,21 +33,23 @@ export default function Announcements() {
       arr.push({id, title, description, createDate})
     }
 
-
     setAnnouncements(arr)
     setModalState(false)
     setModalEditState(false)
   }
+
   const editAnnouncement = (announcement) => {
-    const arr = announcements.filter(value => value.id !== announcement.id)
-    console.log(arr)
+    // const arr = announcements.filter(value => value.id !== announcement.id)
+
     setModalEditState({announcement})
     setModalState('Edit')
   }
+
   const closeModal = () => {
     setModalEditState(false)
     setModalState(null)
   }
+
   const deleteAnnouncement = (id) => {
     setAnnouncements(announcements.filter(value => value.id !== id))
   }
