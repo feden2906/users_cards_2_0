@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="add create date">
+    <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="add edit date">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-announcements/AllAnnouncements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcement/Announcement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcement/Announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcement/Announcement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/announcements/Announcements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
@@ -78,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608131681509</updated>
       <workItem from="1608131683709" duration="88656000" />
-      <workItem from="1608370090472" duration="13311000" />
+      <workItem from="1608370090472" duration="17609000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608400228591</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add edit date">
+      <created>1608402835853</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608402835853</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +245,7 @@
     <MESSAGE value="о" />
     <MESSAGE value="50%" />
     <MESSAGE value="add create date" />
-    <option name="LAST_COMMIT_MESSAGE" value="add create date" />
+    <MESSAGE value="add edit date" />
+    <option name="LAST_COMMIT_MESSAGE" value="add edit date" />
   </component>
 </project>

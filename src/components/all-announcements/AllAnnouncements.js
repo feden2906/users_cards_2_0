@@ -4,7 +4,6 @@ import Announcement from "../announcement/Announcement";
 import CreateAnnouncement from "../buttons/create-announcement/CreateAnnouncement";
 
 export default function AllAnnouncements({announcements, setModalState, deleteAnnouncement, editAnnouncement}) {
-  // const [chosen, setChosen] = useState
   return (
       <div className='all-wrap'>
         <CreateAnnouncement setModalState={setModalState}/>

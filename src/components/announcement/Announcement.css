@@ -49,4 +49,11 @@
 .description {
     margin: 25px 15px 20px;
 }
-.time {}
+.time {
+    display: flex;
+    justify-content: flex-end;
+}
+.time-items {
+    margin-left: 30px;
+    font-size: 12px;
+}
