@@ -41,6 +41,13 @@
     background-color: #a08524;
 }
 
+.btn-show-all-wrapper {
+    position: absolute;
+    right: 0;
+    height: 59px;
+    margin-right: 10%;
+}
+
 
 
 
