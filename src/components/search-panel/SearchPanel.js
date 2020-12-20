@@ -9,6 +9,7 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
   let hintArr = [];
 
 
+  
   if (searchValue) {
     const allHints = announcements.filter(value => value.title.includes(`${searchValue}`));
 
