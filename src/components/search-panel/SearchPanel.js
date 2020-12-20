@@ -8,6 +8,7 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
   const [showHintBlock, setHintState] = useState(false)
   let hintArr = [];
 
+
   if (searchValue) {
     const allHints = announcements.filter(value => value.title.includes(`${searchValue}`));
 
