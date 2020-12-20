@@ -15,6 +15,7 @@ export default function SearchPanel({announcements}) {
         ? hintArr = allHints.splice(0, 3)
         : hintArr = allHints
   }
+
   const clickOnHint = (title) => {
     setNewSearchValue(title)
     document.body.getElementsByClassName('input-panel')[0].value = title
