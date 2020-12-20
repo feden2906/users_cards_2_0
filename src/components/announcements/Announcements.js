@@ -46,8 +46,6 @@ export default function Announcements() {
   }
 
   const editAnnouncement = (announcement) => {
-    // const arr = announcements.filter(value => value.id !== announcement.id)
-
     setModalEditState({announcement})
     setModalState('Edit')
   }
@@ -62,7 +60,6 @@ export default function Announcements() {
   }
 
   const findAnnouncements = (newSearchValue, searchValue) => {
-
     let arr = []
     searchValue
         ? arr = announcements.filter(value => value.title.includes(`${searchValue}`))
@@ -73,7 +70,9 @@ export default function Announcements() {
   return (
       <div className='announcements-wrapper'>
         <h2 className='text-announcements'>Announcements</h2>
-        <SearchPanel announcements={announcements} findAnnouncements={findAnnouncements} setShowArr={setShowArr}/>
+        <SearchPanel announcements={announcements}
+                     findAnnouncements={findAnnouncements}
+                     setShowArr={setShowArr} showArr={showArr}/>
         {
           announcements.length > 0
               ? showArr.length === 0
@@ -96,8 +95,7 @@ export default function Announcements() {
             closeModal={closeModal}
             setAnnouncements={setAnnouncements}
             addAnnouncementToArr={addAnnouncementToArr}
-        />
-        }
+        />}
       </div>
   );
 }
