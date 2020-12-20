@@ -7,8 +7,6 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
   const [searchValue, setSearchValue] = useState('')
   const [showHintBlock, setHintState] = useState(false)
   let hintArr = [];
-
-
   
   if (searchValue) {
     const allHints = announcements.filter(value => value.title.includes(`${searchValue}`));
@@ -33,7 +31,8 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
             setHintState(true)
           }}
                  defaultValue={newSearchValue} className='input-panel' type="text"/>
-          <input onClick={() => findAnnouncements(newSearchValue, searchValue)} className='btn-panel' type={'button'} value='Search'/>
+          <input onClick={() => findAnnouncements(newSearchValue, searchValue)} className='btn-panel' type={'button'}
+                 value='Search'/>
         </div>
         {showHintBlock &&
         <div className='hints-wrapper'>
