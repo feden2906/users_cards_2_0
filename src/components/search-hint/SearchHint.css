@@ -1,0 +1,13 @@
+.hint-item {
+    width: 100%;
+    border-radius: 7px;
+    border: solid 1px #a08524;
+    padding: 8px;
+    font-size: 18px;
+}
+.hint-item:hover {
+    border: solid 1px #7c7a7a;
+    cursor: pointer;
+    background-color: #645013;
+    color: #e3e3e3;
+}

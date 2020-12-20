@@ -63,7 +63,7 @@ export default function Announcements() {
   return (
       <div className='announcements-wrapper'>
         <h2 className='text-announcements'>Announcements</h2>
-        <SearchPanel/>
+        <SearchPanel announcements={announcements}/>
         {
           announcements.length > 0
               ? <AllAnnouncements

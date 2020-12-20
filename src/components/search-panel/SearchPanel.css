@@ -5,11 +5,10 @@
     height: 60px;
     width: 80%;
     margin: auto;
-
 }
 .input-panel {
     height: 70%;
-    width: 100%;
+    width: 80%;
     border-radius: 7px;
     padding: 10px;
     font-size: 18px;
@@ -30,6 +29,16 @@
 .btn-panel:hover {
     background-color: #645013;
     color: #e3e3e3;
+}
+.hints-wrapper {
+    position: absolute;
+    width: 80%;
+    margin: -3px 10%;
+}
+.hints-wrapper-2 {
+    width: 80%;
+    border-radius: 7px;
+    background-color: #a08524;
 }
 
 
