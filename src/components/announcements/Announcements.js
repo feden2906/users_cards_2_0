@@ -20,10 +20,16 @@ export default function Announcements() {
     let id = null;
 
     if (modalEdit) {
-      const chosen = arr.find(value => value.id)
+      const chosen = arr.find(value => value.id === modalEdit.announcement.id)
       const editDate = {date, month, year, hours, minutes}
-      chosen.title = title
-      chosen.description = description
+
+      if (title) {
+        chosen.title = title
+      }
+      if (description) {
+        chosen.description = description
+      }
+
       chosen.editDate = editDate
     } else {
       (announcements.length > 0)
