@@ -7,6 +7,7 @@ import AllAnnouncements from "../all-announcements/AllAnnouncements";
 
 export default function Announcements() {
   const [announcements, setAnnouncements] = useState([]);
+  const [showArr, setShowArr] = useState([]);
   const [modal, setModalState] = useState(null);
   const [modalEdit, setModalEditState] = useState(false);
 
@@ -60,19 +61,35 @@ export default function Announcements() {
     setAnnouncements(announcements.filter(value => value.id !== id))
   }
 
+  const findAnnouncements = (newSearchValue, searchValue) => {
+
+    let arr = []
+    searchValue
+        ? arr = announcements.filter(value => value.title.includes(`${searchValue}`))
+        : arr = announcements.filter(value => value.title.includes(`${newSearchValue}`))
+    setShowArr(arr)
+  }
+
   return (
       <div className='announcements-wrapper'>
         <h2 className='text-announcements'>Announcements</h2>
-        <SearchPanel announcements={announcements}/>
+        <SearchPanel announcements={announcements} findAnnouncements={findAnnouncements} setShowArr={setShowArr}/>
         {
           announcements.length > 0
-              ? <AllAnnouncements
-                  editAnnouncement={editAnnouncement}
-                  announcements={announcements}
-                  setModalState={setModalState}
-                  deleteAnnouncement={deleteAnnouncement}/>
+              ? showArr.length === 0
+                  ? <AllAnnouncements
+                      editAnnouncement={editAnnouncement}
+                      announcements={announcements}
+                      setModalState={setModalState}
+                      deleteAnnouncement={deleteAnnouncement}/>
+                  : <AllAnnouncements
+                      editAnnouncement={editAnnouncement}
+                      announcements={showArr}
+                      setModalState={setModalState}
+                      deleteAnnouncement={deleteAnnouncement}/>
               : <DontCreate setModalState={setModalState}/>
         }
+
         {modal && <ModalCreateAnnouncement
             modalType={modal}
             modalEdit={modalEdit}

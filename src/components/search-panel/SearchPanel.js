@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './SearchPanel.css'
 import SearchHint from "../search-hint/SearchHint";
 
-export default function SearchPanel({announcements}) {
+export default function SearchPanel({announcements, findAnnouncements, setShowArr}) {
   const [newSearchValue, setNewSearchValue] = useState('')
   const [searchValue, setSearchValue] = useState('')
   const [showHintBlock, setHintState] = useState(false)
@@ -18,6 +18,7 @@ export default function SearchPanel({announcements}) {
 
   const clickOnHint = (title) => {
     setNewSearchValue(title)
+    setSearchValue('')
     document.body.getElementsByClassName('input-panel')[0].value = title
     setHintState(false)
   }
@@ -30,14 +31,15 @@ export default function SearchPanel({announcements}) {
             setHintState(true)
           }}
                  defaultValue={newSearchValue} className='input-panel' type="text"/>
-          <input className='btn-panel' type={'button'} value='Search'/>
+          <input onClick={() => findAnnouncements(newSearchValue, searchValue)} className='btn-panel' type={'button'} value='Search'/>
         </div>
         {showHintBlock &&
-          <div className='hints-wrapper'>
-            <div className='hints-wrapper-2'>
-              {searchValue && hintArr.map(value => <SearchHint searchItem={value} key={value.id} clickOnHint={clickOnHint}/>)}
-            </div>
+        <div className='hints-wrapper'>
+          <div className='hints-wrapper-2'>
+            {searchValue && hintArr.map(value => <SearchHint searchItem={value} key={value.id}
+                                                             clickOnHint={clickOnHint}/>)}
           </div>
+        </div>
         }
       </div>
   );
