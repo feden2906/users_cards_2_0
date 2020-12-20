@@ -27,11 +27,13 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
       <div>
         <div className='wrapper-panel'>
           <input onChange={(e) => {
-            setSearchValue(e.currentTarget.value)
-            setHintState(true)
+                 setSearchValue(e.currentTarget.value)
+                 setHintState(true)
           }}
                  defaultValue={newSearchValue} className='input-panel' type="text"/>
-          <input onClick={() => findAnnouncements(newSearchValue, searchValue)} className='btn-panel' type='button'
+          <input onClick={() => findAnnouncements(newSearchValue, searchValue, setHintState)}
+                 className='btn-panel'
+                 type='button'
                  value='Search'/>
         </div>
         {showHintBlock &&

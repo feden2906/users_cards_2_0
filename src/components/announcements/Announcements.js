@@ -59,12 +59,13 @@ export default function Announcements() {
     setAnnouncements(announcements.filter(value => value.id !== id))
   }
 
-  const findAnnouncements = (newSearchValue, searchValue) => {
+  const findAnnouncements = (newSearchValue, searchValue, setHintState) => {
     let arr = []
     searchValue
         ? arr = announcements.filter(value => value.title.includes(`${searchValue}`))
         : arr = announcements.filter(value => value.title.includes(`${newSearchValue}`))
     setShowArr(arr)
+    setHintState(false)
   }
 
   return (
