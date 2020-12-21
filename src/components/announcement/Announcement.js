@@ -4,7 +4,6 @@ import React, {useState} from "react";
 export default function Announcement(props) {
   const {announcement, index, deleteAnnouncement, editAnnouncement} = props
   const {id, title, description, createDate, editDate} = announcement
-  const {date, month, year, hours, minutes} = createDate
 
   const [flag, setFlag] = useState(false)
 
@@ -27,11 +26,11 @@ export default function Announcement(props) {
                             <p>{`${editDate.hours}:${editDate.minutes} ${editDate.date}.${editDate.month}.${editDate.year}`}</p>
                          </div>
             }
-            <div className='time-items'>
-              <p><b>Created :</b></p>
-              <p>{`${hours}:${minutes} ${date}.${month}.${year}`}</p>
-            </div>
-
+            {createDate && <div className='time-items'>
+                             <p><b>Created :</b></p>
+                             <p>{`${createDate.hours}:${createDate.minutes} ${createDate.date}.${createDate.month}.${createDate.year}`}</p>
+                           </div>
+            }
           </div>
         </div>
     )
