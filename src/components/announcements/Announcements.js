@@ -156,7 +156,7 @@ export default function Announcements() {
   const [showArr, setShowArr] = useState([]);
   const [modal, setModalState] = useState(null);
   const [modalEdit, setModalEditState] = useState(false);
-  console.log(announcements)
+
   const addAnnouncementToArr = (title, description) => {
     const arr = JSON.parse(JSON.stringify(announcements))
     const year = new Date().getFullYear()
