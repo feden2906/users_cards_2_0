@@ -54,6 +54,7 @@ class Users extends Component {
     const {users: old} = this.state
     const users = old.filter(user => user.id !== id)
     this.setState({users})
+    this.setState({chosenUser: null})
     const {history} = this.props
     history.push('/Users')
   }
