@@ -23,6 +23,10 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
     setHintState(false)
   }
 
+  const showAll = () => {
+    setShowArr([])
+  }
+
   return (
       <div>
         <div className='wrapper-panel'>
@@ -46,7 +50,7 @@ export default function SearchPanel({announcements, findAnnouncements, setShowAr
         }
         {showArr.length > 0 &&
                 <div className='btn-show-all-wrapper'>
-                  <input onClick={() => setShowArr([])} type="button" className='btn-panel' value='Show all'/>
+                  <input onClick={showAll} type="button" className='btn-panel' value='Show all'/>
                 </div>
         }
 
