@@ -4,8 +4,7 @@
     <list default="true" id="90bffb6b-85cb-4930-becf-cabba45f277a" name="Default Changelist" comment="show hint item">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/announcements/Announcements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/announcements/Announcements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-panel/SearchPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-panel/SearchPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/create-announcement/CreateAnnouncement.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,12 @@
       <updated>1608131681509</updated>
       <workItem from="1608131683709" duration="88656000" />
       <workItem from="1608370090472" duration="37344000" />
-      <workItem from="1608487002810" duration="5287000" />
+      <workItem from="1608487002810" duration="5816000" />
+      <workItem from="1608543177383" duration="2073000" />
+      <workItem from="1608556767130" duration="12916000" />
+      <workItem from="1608655465275" duration="986000" />
+      <workItem from="1608800489706" duration="1416000" />
+      <workItem from="1609530934777" duration="1107000" />
     </task>
     <task id="LOCAL-00001" summary="---">
       <created>1608155020655</created>
@@ -304,7 +308,56 @@
       <option name="project" value="LOCAL" />
       <updated>1608492882833</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fix showing hint panel">
+      <created>1608493284607</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1608493284607</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix showing hint panel">
+      <created>1608493307395</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1608493307396</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add margin between announcements">
+      <created>1608556528694</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1608556528694</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix deleting bag">
+      <created>1608558046652</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1608558046652</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix showAll">
+      <created>1608558728027</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1608558728027</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add default announcements">
+      <created>1608566843639</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1608566843639</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add default announcements">
+      <created>1608566935272</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1608566935272</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +395,11 @@
     <MESSAGE value="show hint item" />
     <MESSAGE value="fix find problem with hints" />
     <MESSAGE value="add button &quot;Show all&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add button &quot;Show all&quot;" />
+    <MESSAGE value="fix showing hint panel" />
+    <MESSAGE value="add margin between announcements" />
+    <MESSAGE value="fix deleting bag" />
+    <MESSAGE value="fix showAll" />
+    <MESSAGE value="add default announcements" />
+    <option name="LAST_COMMIT_MESSAGE" value="add default announcements" />
   </component>
 </project>
