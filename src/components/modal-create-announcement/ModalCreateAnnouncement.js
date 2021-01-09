@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import './ModalCreateAnnouncement.css'
 
 export default function ModalCreateAnnouncement({closeModal, addAnnouncementToArr, modalType, modalEdit}) {
+
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
+
   return (
       <div className='modal-wrapper-announcement'>
         <div className='modal-form-announcement'>
