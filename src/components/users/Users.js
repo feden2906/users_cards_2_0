@@ -62,26 +62,23 @@ class Users extends Component {
   render() {
 
     const {users, chosenUser, modal, modalCreate} = this.state
+
     if (users) {
       return (
           <div className='users-wrapper'>
             <h2 className='text-users'>Users</h2>
             <div className='all-and-chosen'>
+
               <div className='all-users'>
                 {users.map(value => <User user={value} key={value.id} chosenUser={this.chosenUser}/>)}
               </div>
+
               <div className='w50'>
-                {chosenUser && <ChosenUser deleteUser={this.deleteUser} editUser={this.editUser} chosenUser={chosenUser}/>}
-                {/*<Route path={url + '/:id'} render={(props) => {*/}
-                {/*  const {match: {params: {id}}} = props*/}
-                {/*  return <ChosenUser key={id}*/}
-                {/*                     deleteUser={this.deleteUser}*/}
-                {/*                     editUser={this.editUser}*/}
-                {/*                     chosenUser={chosenUser}/>*/}
-                {/*}}*/}
-                {/*/>*/}
+                {chosenUser &&
+                <ChosenUser deleteUser={this.deleteUser} editUser={this.editUser} chosenUser={chosenUser}/>}
                 <Create createUser={this.createUser}/>
               </div>
+
             </div>
             {modal && <ModalEdit modalSaveClose={this.modalSaveClose} chosenUser={chosenUser}/>}
             {modalCreate && <ModalCreate modalCreateClose={this.modalCreateClose}/>}
